@@ -513,7 +513,7 @@ function resetCd(){
 // Limpiar scripts JSONP acumulados cada 10 minutos
 setInterval(()=>{document.querySelectorAll('script[id="jsonp-script"]').forEach(s=>s.remove());},600000);
 (function(){
-  const FIXED='https://script.google.com/macros/s/AKfycbzRGHVsYi5pE9WMnq_GTRRHKhGilc40vFdtjwW_9qdOFxuKPynKPDiD8nGwmx_d23WY/exec';
+  const FIXED='https://script.google.com/macros/s/AKfycbyPvSusYokXa31PEofyutYvOyQn73woWxrU2QA-KUKyQWAAfM4EbVWamCf2RP4YNdDj/exec';
   localStorage.setItem(KEY,FIXED);
   document.getElementById('modal').classList.add('hidden');
   fetchData();
